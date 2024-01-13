@@ -14,19 +14,37 @@ let numbers = [
 
 // Todo 3.1 Get the first, 5th, and last items in the numbers array.
 // Your code here
+console.log(`1st Item: ${numbers[0]}`)
+console.log(`5th Item: ${numbers[4]}`)
+console.log(`Last Item: ${numbers[numbers.length - 1]}`)
 
 // Todo 3.2 calculate the min, max, and the average of the numbers array
 // Your code here
+minResult = console.log(Math.min(...numbers))
+maxResult = console.log(Math.max(...numbers))
+
+let sum = 0
+for (let i = 0; i<= (numbers.length - 1); i++){
+    sum += numbers[i]
+}
+aveNum = console.log(sum / numbers.length)
 
 // Checkpoint 3.1 How would you compare lists in python vs arrays in JavaScript
 // Answer: 
 
 // Todo 3.3 Declare an object with information about IT114L (course code, name, units, number of students)
 // Your code here
+const IT114L = {
+    courseCode : "IT114L",
+    name : "WEB SYSTEMS AND TECHNOLOGIES (LABORATORY)",
+    units : 1,
+    numberOfStudents : 40
+}
 
 // Todo 3.4 Add professor name as one of the fields of the object. Display the value of professor name.
 // Your code here
-
+IT114L.professorName = "Job Lipat"
+console.log(`\nProfessor name: ${IT114L.professorName}`)
 // Todo 3.5 Declare and array of objects with information about the courses you are taking this term
 // Your code here
 
